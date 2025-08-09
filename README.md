@@ -107,7 +107,7 @@ Exemples des propriétés utilisées (à définir dans l’environnement) :
 
 ### Prérequis
 
-* Java 17 ou supérieur
+* Java 21
 * Maven 3.x
 * PostgreSQL configuré avec les bonnes variables d’environnement
 * Configuration SMTP valide (ex: Gmail App Password)

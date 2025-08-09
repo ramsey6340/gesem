@@ -28,6 +28,7 @@ class SecurityConfig(
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
         http {
+            cors {  }
             csrf { disable() }
 
             sessionManagement {
@@ -49,7 +50,7 @@ class SecurityConfig(
                 )
 
                 authorize("/api/v1/auth/admin", hasRole("ADMIN"))
-                authorize("/api/v1/auth/employes/**", hasRole("ADMIN"))
+                authorize("/api/v1/employes/**", permitAll)
 
                 authorize(anyRequest, authenticated)
             }
