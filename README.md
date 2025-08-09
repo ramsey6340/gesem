@@ -6,6 +6,19 @@ Application Spring Boot pour la gestion des employés et l'authentification.
 
 ## Configuration
 
+---
+
+## Compte administrateur par défaut
+
+Au démarrage, si aucun compte administrateur n'existe dans la base, l'application crée automatiquement un compte admin par défaut.
+
+Les informations de connexion (nom d'utilisateur et mot de passe) sont définies via les variables d’environnement suivantes, à placer dans votre fichier `.env` :
+
+```env
+GESEM_DEFAULT_USERNAME=theking
+GESEM_DEFAULT_PASSWORD=nan@tsun0t@1sen
+```
+
 ### Profils
 
 - `dev` : profil de développement
