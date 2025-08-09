@@ -29,7 +29,7 @@ class JwtUtils(
      * Génère un refresh token pour l'utilisateur
      */
     fun generateRefreshToken(user: Admin): String =
-        createToken(user, refreshTokenExpirationMs, includeRole = false)
+        createToken(user, refreshTokenExpirationMs, includeRole = true)
 
     /**
      * Crée un JWT avec une durée donnée
