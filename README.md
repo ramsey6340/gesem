@@ -31,10 +31,10 @@ spring.profiles.active=dev
 
 ### Ports
 
-L'application démarre par défaut sur le port **8081** (configurable dans `application.properties`) :
+L'application démarre par défaut sur le port **8082** (configurable dans `application.properties`) :
 
 ```properties
-server.port=8081
+server.port=8082
 ```
 
 ---
@@ -67,10 +67,10 @@ Exemples des propriétés utilisées (à définir dans l’environnement) :
 ### Documentation Swagger / OpenAPI
 
 * Accessible à l’URL :
-  `http://localhost:8081/swagger-ui.html`
+  `http://localhost:8082/swagger-ui.html`
 
 * Le fichier OpenAPI JSON est disponible sur :
-  `http://localhost:8081/api-docs`
+  `http://localhost:8082/api-docs`
 
 ---
 
